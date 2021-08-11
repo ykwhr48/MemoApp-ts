@@ -8,15 +8,18 @@ import {
 
 import AppBar from '../components/AppBar';
 import CircleButton from '../components/CircleButton';
+// import KeyboardSafeView from '../components/KeyboardSafeView';
 
 export default function MemoCreateScreen() {
   return (
     <View style={styles.container}>
       <AppBar />
-
       <KeyboardAvoidingView style={styles.inputContainer} behavior="height">
         <TextInput value="" multiline style={styles.input} />
       </KeyboardAvoidingView>
+      {/* <KeyboardSafeView style={styles.inputContainer} behavior="height">
+        <TextInput value="" multiline style={styles.input} />
+      </KeyboardSafeView> */}
       <CircleButton name="check" />
     </View>
   );

@@ -8,6 +8,7 @@ import {
 
 import AppBar from '../components/AppBar';
 import CircleButton from '../components/CircleButton';
+// import KeyboardSafeView from '../components/KeyboardSafeView';
 
 export default function MemoEditScreen() {
   return (
@@ -17,6 +18,9 @@ export default function MemoEditScreen() {
       <KeyboardAvoidingView style={styles.inputContainer} behavior="height">
         <TextInput value="買い物リスト" multiline style={styles.input} />
       </KeyboardAvoidingView>
+      {/* <KeyboardSafeView style={styles.inputContainer} behavior="height">
+        <TextInput value="買い物リスト" multiline style={styles.input} />
+      </KeyboardSafeView> */}
       <CircleButton name="check" />
     </View>
   );
